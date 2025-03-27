@@ -6,25 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   toast.classList.add('toast');
   document.body.appendChild(toast);
 
-  // Focusable elements for keyboard navigation
-  const focusableElements = form.querySelectorAll('input, textarea, button');
-  let currentFocus = 0;
-
-  // Keyboard navigation (Tab + Shift + Enter)
-  form.addEventListener('keydown', (e) => {
-    if (e.key === 'Tab') {
-      if (e.shiftKey) {
-        currentFocus = (currentFocus - 1 + focusableElements.length) % focusableElements.length;
-      } else {
-        currentFocus = (currentFocus + 1) % focusableElements.length;
-      }
-      focusableElements[currentFocus].focus();
-      e.preventDefault();
-    } else if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
-      e.preventDefault();
-      form.dispatchEvent(new Event('submit'));
-    }
-  });
 
   // Form submission handling
   form.addEventListener('submit', (e) => {

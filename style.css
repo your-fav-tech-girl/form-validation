@@ -22,16 +22,17 @@ body{
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 650px;
-  margin:100px 300px;
+  max-width: 700px;
+  margin:150px 300px;
+  height: 650px;
 }
 
 /* Form Styling */
 .contact{
 margin:50px;
 }
-.contact-form h2 {
-  margin-bottom: 5rem;
+.contact h2 {
+  margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 .name{
@@ -138,13 +139,38 @@ input[type=radio] {
   background-color: #1b5e20;
 }
 
-/* TABLET RESPONSIVENESS*/
-@media (max-width: 875px) {
+
+
+@media (max-width: 1024px) {
 
   .container{
-    width:90%;
+    width:80%;
+    max-width:850px;
+    margin:150px 100px;
+    }
+    .radio-group {
+      display: flex;
+      flex-direction:row;
+  
+  }
+  .name{
+    display:flex;
+    flex-direction:row;
+  }
+  
+  textarea {
+    resize: none;
+    height: 120px;
+  }
+
+}
+
+@media (max-width: 925px) {
+
+  .container{
+    width:80%;
     max-width:800px;
-    margin-left:50px;
+    margin:150px 0px 0px 80px;
     }
     .radio-group {
       display: flex;
@@ -165,12 +191,107 @@ input[type=radio] {
 
 
 
+/* TABLET RESPONSIVENESS*/
+@media (max-width:850px) {
+
+  .container{
+    width:80%;
+    max-width:800px;
+    margin:150px 130px;
+    }
+    .radio-group {
+      display: flex;
+      flex-direction:row;
+  
+  }
+  .name{
+    display:flex;
+    flex-direction:row;
+  }
+  
+  textarea {
+    resize: none;
+    height: 120px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .container{
+    width:70%;
+    max-width:700px;
+    margin: 150px 100px;
+    height:800px;
+    }
+    .radio-group {
+      display: flex;
+      flex-direction:column;
+  
+  }
+  .name{
+    display:flex;
+    flex-direction:column;
+  }
+  
+  textarea {
+    resize: none;
+    height: 120px;
+  }
+
+}
+@media (max-width: 485px) {
+
+  .container{
+    width:90%;
+    max-width:450px;
+    margin: 50px 20px;
+    height:800px;
+    }
+    .radio-group {
+      display: flex;
+      flex-direction:column;
+  
+  }
+  .name{
+    display:flex;
+    flex-direction:column;
+  }
+  
+  input,
+textarea {
+  width: 110%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+.form-group.full-width {
+  width: 100%;
+}
+
+  textarea {
+    resize: none;
+    height: 120px;
+  }
+  .radio-group label {
+    width: 110%;
+    
+  }
+  .submit-btn {
+  width:110%;
+  }
+}
+
 /* MOBILE RESPONSIVENESS*/
 @media (max-width: 375px)  {
   .container{
-  width:90%;
+  width:50%;
   max-width:350px;
-  margin:10px 20px;
+  margin:150px 20px;
+  height:1200px;
   }
   .radio-group {
     display: flex;
