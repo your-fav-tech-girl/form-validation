@@ -23,7 +23,7 @@ body{
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 100%;
   max-width: 650px;
-  margin-left: 300px;
+  margin:100px 300px;
 }
 
 /* Form Styling */
@@ -162,20 +162,6 @@ input[type=radio] {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
